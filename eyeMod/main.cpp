@@ -6,6 +6,7 @@
 #include <queue>
 #include <stdio.h>
 #include <math.h>
+#include <time.h>
 
 #include "constants.h"
 #include "findEyeCenter.h"
@@ -52,6 +53,8 @@ cv::Point topAv, bottomAv, rightAv, leftAv;
 
 int step = 1;
 
+time_t now;
+
 
 int calibStatus = 0;
 // 0 = Initial;
@@ -86,7 +89,13 @@ std::string calibrationInitText = "Centre your face within the area and press sp
 
 
 void resetCalibration(){
+
+    now = time(0);
+    char* dt = ctime(&now);
     
+    std::cout << "Number of sec since January 1,1970:" << now << std::endl;
+    
+    printf(dt);
     
     gazeTrackingStep = !gazeTrackingStep;
     
@@ -152,7 +161,8 @@ void calculateGazeScale(){
     
    
     
-    printf("POSITION 1: \n");
+    //printf("POSITION 1: \n");
+    
     auto n = calibP1.size() ;
     auto m = calibP1.size() ;
     
@@ -163,10 +173,12 @@ void calculateGazeScale(){
     
     av1.x = x1 / m;
     av1.y = y1 / m;
-    printf("X:%d, Y:%d \n", av1.x, av1.y);
+    
+    //printf("X:%d, Y:%d \n", av1.x, av1.y);
     
     
-    printf("POSITION 2: \n");
+    //printf("POSITION 2: \n");
+    
     n = calibP2.size() ;
     m = calibP2.size() ;
     x1 = 0; y1 = 0;
@@ -178,10 +190,12 @@ void calculateGazeScale(){
     
     av2.x = x1 / m;
     av2.y = y1 / m;
-    printf("X:%d, Y:%d \n", av2.x, av2.y);
+    
+    //printf("X:%d, Y:%d \n", av2.x, av2.y);
     
     
-    printf("POSITION 3: \n");
+    //printf("POSITION 3: \n");
+    
     n = calibP3.size() ;
     m = calibP3.size() ;
     x1 = 0; y1 = 0;
@@ -193,10 +207,12 @@ void calculateGazeScale(){
     
     av3.x = x1 / m;
     av3.y = y1 / m;
-    printf("X:%d, Y:%d \n", av3.x, av3.y);
+    
+    //printf("X:%d, Y:%d \n", av3.x, av3.y);
     
     
-    printf("POSITION 4: \n");
+    //printf("POSITION 4: \n");
+    
     n = calibP4.size() ;
     m = calibP4.size() ;
     x1 = 0; y1 = 0;
@@ -208,10 +224,12 @@ void calculateGazeScale(){
     
     av4.x = x1 / m;
     av4.y = y1 / m;
-    printf("X:%d, Y:%d \n", av4.x, av4.y);
+    
+    //printf("X:%d, Y:%d \n", av4.x, av4.y);
     
     
-    printf("POSITION 5: \n");
+    //printf("POSITION 5: \n");
+    
     n = calibP5.size() ;
     m = calibP5.size() ;
     x1 = 0; y1 = 0;
@@ -223,10 +241,12 @@ void calculateGazeScale(){
     
     av5.x = x1 / m;
     av5.y = y1 / m;
-    printf("X:%d, Y:%d \n", av5.x, av5.y);
+    
+    //printf("X:%d, Y:%d \n", av5.x, av5.y);
     
     
-    printf("POSITION 6: \n");
+    //printf("POSITION 6: \n");
+    
     n = calibP6.size() ;
     m = calibP6.size() ;
     x1 = 0; y1 = 0;
@@ -238,10 +258,12 @@ void calculateGazeScale(){
     
     av6.x = x1 / m;
     av6.y = y1 / m;
-    printf("X:%d, Y:%d \n", av6.x, av6.y);
+    
+    //printf("X:%d, Y:%d \n", av6.x, av6.y);
     
     
-    printf("POSITION 7: \n");
+    //printf("POSITION 7: \n");
+    
     n = calibP7.size() ;
     m = calibP7.size() ;
     x1 = 0; y1 = 0;
@@ -253,10 +275,12 @@ void calculateGazeScale(){
     
     av7.x = x1 / m;
     av7.y = y1 / m;
-    printf("X:%d, Y:%d \n", av7.x, av7.y);
+    
+   // printf("X:%d, Y:%d \n", av7.x, av7.y);
     
     
-    printf("POSITION 8: \n");
+    //printf("POSITION 8: \n");
+    
     n = calibP8.size() ;
     m = calibP8.size() ;
     x1 = 0; y1 = 0;
@@ -268,11 +292,13 @@ void calculateGazeScale(){
     
     av8.x = x1 / m;
     av8.y = y1 / m;
-    printf("X:%d, Y:%d \n", av8.x, av8.y);
+    
+    //printf("X:%d, Y:%d \n", av8.x, av8.y);
     
     
     
-    printf("POSITION 9: \n");
+    //printf("POSITION 9: \n");
+    
     n = calibP9.size() ;
     m = calibP9.size() ;
     x1 = 0; y1 = 0;
@@ -516,10 +542,12 @@ int main( int argc, const char** argv ) {
   capture = cvCaptureFromCAM( -1 );
   if( capture ) {
     while( true ) {
-      frame = cvQueryFrame( capture );
-      // mirror it
-      cv::flip(frame, frame, 1);
-      frame.copyTo(debugImage);
+        frame = cvQueryFrame( capture );
+        
+        // mirror it
+        cv::flip(frame, frame, 1);
+        frame.copyTo(debugImage);
+        
         cv::resizeWindow(main_window_name, 1440, 900);
         cv::moveWindow(main_window_name, 0, 0);
         
@@ -553,6 +581,7 @@ int main( int argc, const char** argv ) {
             paintCalibration(debugImage);
         
         };
+            
         if (gazeTracking){
             
             cv::resizeWindow(main_window_name, 1440, 900);
@@ -565,6 +594,15 @@ int main( int argc, const char** argv ) {
         };
         
         if (gazeTrackingStep){
+            
+            time_t here = time(0);
+            
+            if ((now - here) < (-5 * step)){
+                
+                step++;
+                
+            }
+            
             detectAndDisplay(debugImage);
             fullScreenCalibration();
             switch (step) {
@@ -658,48 +696,43 @@ void toggleSetup(){
         if (faces.size() != 0) {
             
         
-        if(((faces[0].height * faces[0].width) <  (calibWidth * calibHeight)) ){
+            if(((faces[0].height * faces[0].width) <  (calibWidth * calibHeight)) ){
     
     
-            printf("SUITABLE SIZE \n");
-            calibStatus = 10;
+                printf("SUITABLE SIZE \n");
+                calibStatus = 10;
             
-            trackingMode = true;
-            calibrationStep = false;
+                trackingMode = true;
+                calibrationStep = false;
             
-            detectedFaceHeight = faces[0].height;
-            detectedFaceWidth = faces[0].width;
+                detectedFaceHeight = faces[0].height;
+                detectedFaceWidth = faces[0].width;
           
             
-        //save initial face rectangle size
-        //set depth level to be initSize / thisSize
+                //save initial face rectangle size
+                //set depth level to be initSize / thisSize
     
-        //set tracking to enabled
+                //set tracking to enabled
     
-        //
+                //
     
-        }else if(((faces[0].height * faces[0].width) <  (calibWidth/2 * calibHeight/2)) ){
+            }
+            else if(((faces[0].height * faces[0].width) <  (calibWidth/2 * calibHeight/2)) ){
     
-            printf("Too far \n");
-            calibStatus = 2;
+                printf("Too far \n");
+                calibStatus = 2;
     
-        }else{
+            }
+            else{
             
-            printf("Too close \n");
-            calibStatus = 1;
+                printf("Too close \n");
+                calibStatus = 1;
             
-        }
+            }
+            
         }
     
     }
-    
-    
-    
-
-    
-    
-    
-    
     
     
 }
@@ -715,6 +748,7 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
     double sigma = kSmoothFaceFactor * face.width;
     GaussianBlur( faceROI, faceROI, cv::Size( 0, 0 ), sigma);
   }
+    
   //-- Find eye regions and draw them
   int eye_region_width = face.width * (kEyePercentWidth/100.0);
   int eye_region_height = face.width * (kEyePercentHeight/100.0);
