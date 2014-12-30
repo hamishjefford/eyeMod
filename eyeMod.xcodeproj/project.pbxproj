@@ -25,11 +25,12 @@
 		5B089BB01A235E07007F37FD /* libopencv_superres.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B089B9E1A235E07007F37FD /* libopencv_superres.2.4.9.dylib */; };
 		5B089BB11A235E07007F37FD /* libopencv_video.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B089B9F1A235E07007F37FD /* libopencv_video.2.4.9.dylib */; };
 		5B089BB21A235E07007F37FD /* libopencv_videostab.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B089BA01A235E07007F37FD /* libopencv_videostab.2.4.9.dylib */; };
-		5B089BBC1A236071007F37FD /* findEyeCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B089BB81A236071007F37FD /* findEyeCenter.cpp */; };
-		5B089BBD1A236071007F37FD /* findEyeCorner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B089BB91A236071007F37FD /* findEyeCorner.cpp */; };
-		5B089BBE1A236071007F37FD /* helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B089BBA1A236071007F37FD /* helpers.cpp */; };
-		5B089BBF1A236071007F37FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B089BBB1A236071007F37FD /* main.cpp */; };
-		5B0D30271A23947D00E32238 /* imageAdd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D30261A23947D00E32238 /* imageAdd.cpp */; };
+		5B7E7DC81A2E51BF007D651F /* libncurses.5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7E7DC71A2E51BF007D651F /* libncurses.5.4.dylib */; };
+		5BB6DB091A2CB5AA00B3EED6 /* findEyeCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6DB001A2CB5AA00B3EED6 /* findEyeCenter.cpp */; };
+		5BB6DB0A1A2CB5AA00B3EED6 /* findEyeCorner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6DB021A2CB5AA00B3EED6 /* findEyeCorner.cpp */; };
+		5BB6DB0B1A2CB5AA00B3EED6 /* helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6DB051A2CB5AA00B3EED6 /* helpers.cpp */; };
+		5BB6DB0C1A2CB5AA00B3EED6 /* imageAdd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6DB071A2CB5AA00B3EED6 /* imageAdd.cpp */; };
+		5BB6DB0D1A2CB5AA00B3EED6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6DB081A2CB5AA00B3EED6 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,15 +65,17 @@
 		5B089B9E1A235E07007F37FD /* libopencv_superres.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_superres.2.4.9.dylib; sourceTree = "<group>"; };
 		5B089B9F1A235E07007F37FD /* libopencv_video.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_video.2.4.9.dylib; sourceTree = "<group>"; };
 		5B089BA01A235E07007F37FD /* libopencv_videostab.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videostab.2.4.9.dylib; sourceTree = "<group>"; };
-		5B089BB41A236071007F37FD /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
-		5B089BB51A236071007F37FD /* findEyeCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findEyeCenter.h; sourceTree = "<group>"; };
-		5B089BB61A236071007F37FD /* findEyeCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findEyeCorner.h; sourceTree = "<group>"; };
-		5B089BB71A236071007F37FD /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
-		5B089BB81A236071007F37FD /* findEyeCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findEyeCenter.cpp; sourceTree = "<group>"; };
-		5B089BB91A236071007F37FD /* findEyeCorner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findEyeCorner.cpp; sourceTree = "<group>"; };
-		5B089BBA1A236071007F37FD /* helpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = helpers.cpp; sourceTree = "<group>"; };
-		5B089BBB1A236071007F37FD /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		5B0D30261A23947D00E32238 /* imageAdd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imageAdd.cpp; sourceTree = "<group>"; };
+		5B7E7DC71A2E51BF007D651F /* libncurses.5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libncurses.5.4.dylib; path = /usr/lib/libncurses.5.4.dylib; sourceTree = "<absolute>"; };
+		5BB6DAFF1A2CB5AA00B3EED6 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		5BB6DB001A2CB5AA00B3EED6 /* findEyeCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findEyeCenter.cpp; sourceTree = "<group>"; };
+		5BB6DB011A2CB5AA00B3EED6 /* findEyeCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findEyeCenter.h; sourceTree = "<group>"; };
+		5BB6DB021A2CB5AA00B3EED6 /* findEyeCorner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findEyeCorner.cpp; sourceTree = "<group>"; };
+		5BB6DB031A2CB5AA00B3EED6 /* findEyeCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findEyeCorner.h; sourceTree = "<group>"; };
+		5BB6DB041A2CB5AA00B3EED6 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		5BB6DB051A2CB5AA00B3EED6 /* helpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = helpers.cpp; sourceTree = "<group>"; };
+		5BB6DB061A2CB5AA00B3EED6 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		5BB6DB071A2CB5AA00B3EED6 /* imageAdd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imageAdd.cpp; sourceTree = "<group>"; };
+		5BB6DB081A2CB5AA00B3EED6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7E7DC81A2E51BF007D651F /* libncurses.5.4.dylib in Frameworks */,
 				5B089BAB1A235E07007F37FD /* libopencv_nonfree.2.4.9.dylib in Frameworks */,
 				5B089BA31A235E07007F37FD /* libopencv_core.2.4.9.dylib in Frameworks */,
 				5B089BB11A235E07007F37FD /* libopencv_video.2.4.9.dylib in Frameworks */,
@@ -107,9 +111,10 @@
 		5B089B7C1A235DCA007F37FD = {
 			isa = PBXGroup;
 			children = (
+				5B7E7DC91A2E51DD007D651F /* Depedancies */,
 				5B089BB31A235E1D007F37FD /* OpenCV FIles */,
-				5B089B871A235DCA007F37FD /* openCVTest */,
 				5B089B861A235DCA007F37FD /* Products */,
+				5BB6DAFE1A2CB5AA00B3EED6 /* eyeMod */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,22 +124,6 @@
 				5B089B851A235DCA007F37FD /* eyeMod */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5B089B871A235DCA007F37FD /* openCVTest */ = {
-			isa = PBXGroup;
-			children = (
-				5B089BB41A236071007F37FD /* constants.h */,
-				5B089BB51A236071007F37FD /* findEyeCenter.h */,
-				5B089BB61A236071007F37FD /* findEyeCorner.h */,
-				5B089BB71A236071007F37FD /* helpers.h */,
-				5B089BB81A236071007F37FD /* findEyeCenter.cpp */,
-				5B089BB91A236071007F37FD /* findEyeCorner.cpp */,
-				5B089BBA1A236071007F37FD /* helpers.cpp */,
-				5B089BBB1A236071007F37FD /* main.cpp */,
-				5B0D30261A23947D00E32238 /* imageAdd.cpp */,
-			);
-			path = openCVTest;
 			sourceTree = "<group>";
 		};
 		5B089BB31A235E1D007F37FD /* OpenCV FIles */ = {
@@ -160,6 +149,31 @@
 				5B089BA01A235E07007F37FD /* libopencv_videostab.2.4.9.dylib */,
 			);
 			name = "OpenCV FIles";
+			sourceTree = "<group>";
+		};
+		5B7E7DC91A2E51DD007D651F /* Depedancies */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E7DC71A2E51BF007D651F /* libncurses.5.4.dylib */,
+			);
+			name = Depedancies;
+			sourceTree = "<group>";
+		};
+		5BB6DAFE1A2CB5AA00B3EED6 /* eyeMod */ = {
+			isa = PBXGroup;
+			children = (
+				5BB6DAFF1A2CB5AA00B3EED6 /* constants.h */,
+				5BB6DB001A2CB5AA00B3EED6 /* findEyeCenter.cpp */,
+				5BB6DB011A2CB5AA00B3EED6 /* findEyeCenter.h */,
+				5BB6DB021A2CB5AA00B3EED6 /* findEyeCorner.cpp */,
+				5BB6DB031A2CB5AA00B3EED6 /* findEyeCorner.h */,
+				5BB6DB041A2CB5AA00B3EED6 /* haarcascade_frontalface_alt.xml */,
+				5BB6DB051A2CB5AA00B3EED6 /* helpers.cpp */,
+				5BB6DB061A2CB5AA00B3EED6 /* helpers.h */,
+				5BB6DB071A2CB5AA00B3EED6 /* imageAdd.cpp */,
+				5BB6DB081A2CB5AA00B3EED6 /* main.cpp */,
+			);
+			path = eyeMod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,11 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B089BBC1A236071007F37FD /* findEyeCenter.cpp in Sources */,
-				5B089BBE1A236071007F37FD /* helpers.cpp in Sources */,
-				5B089BBF1A236071007F37FD /* main.cpp in Sources */,
-				5B089BBD1A236071007F37FD /* findEyeCorner.cpp in Sources */,
-				5B0D30271A23947D00E32238 /* imageAdd.cpp in Sources */,
+				5BB6DB0C1A2CB5AA00B3EED6 /* imageAdd.cpp in Sources */,
+				5BB6DB091A2CB5AA00B3EED6 /* findEyeCenter.cpp in Sources */,
+				5BB6DB0A1A2CB5AA00B3EED6 /* findEyeCorner.cpp in Sources */,
+				5BB6DB0D1A2CB5AA00B3EED6 /* main.cpp in Sources */,
+				5BB6DB0B1A2CB5AA00B3EED6 /* helpers.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
