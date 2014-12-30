@@ -2,7 +2,7 @@
 #define CONSTANTS_H
 
 // Debugging
-const bool kPlotVectorField = false;
+const bool kPlotVectorField = true;
 
 // Size constants
 const int kEyePercentTop = 25;
@@ -15,7 +15,7 @@ const bool kSmoothFaceImage = false;
 const float kSmoothFaceFactor = 0.005;
 
 // Algorithm Parameters
-const int kFastEyeWidth = 50;
+const int kFastEyeWidth = 35;  //50 Default  (lower = faster, less accurate.)
 const int kWeightBlurSize = 5;
 const bool kEnableWeight = false;
 const float kWeightDivisor = 150.0;
