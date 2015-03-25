@@ -26,27 +26,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eyeMod/main.cpp"
+<<<<<<< Updated upstream
             timestampString = "440330791.332781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "272"
             endingLineNumber = "272"
             landmarkName = "calculateGazeScale()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "eyeMod/main.cpp"
-            timestampString = "440382811.406435"
+=======
+            timestampString = "447880719.363846"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "394"
-            endingLineNumber = "394"
+            startingLineNumber = "705"
+            endingLineNumber = "705"
             landmarkName = "paintGazeLocation( cv::Mat framed )"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +50,92 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eyeMod/main.cpp"
+            timestampString = "447880719.363846"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1220"
+            endingLineNumber = "1220"
+            landmarkName = "main( int argc, const char** argv )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eyeMod/main.cpp"
+            timestampString = "447880719.363846"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "696"
+            endingLineNumber = "696"
+            landmarkName = "paintGazeLocation( cv::Mat framed )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eyeMod/main.cpp"
+            timestampString = "447880719.363846"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "702"
+            endingLineNumber = "702"
+            landmarkName = "paintGazeLocation( cv::Mat framed )"
+>>>>>>> Stashed changes
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eyeMod/main.cpp"
+<<<<<<< Updated upstream
+            timestampString = "440382811.406435"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "394"
+            endingLineNumber = "394"
+=======
+            timestampString = "447880719.363846"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "690"
+            endingLineNumber = "690"
+>>>>>>> Stashed changes
+            landmarkName = "paintGazeLocation( cv::Mat framed )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eyeMod/main.cpp"
+<<<<<<< Updated upstream
             timestampString = "440383339.994552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "393"
             endingLineNumber = "393"
+=======
+            timestampString = "447880719.363846"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "684"
+            endingLineNumber = "684"
+>>>>>>> Stashed changes
             landmarkName = "paintGazeLocation( cv::Mat framed )"
             landmarkType = "7">
          </BreakpointContent>

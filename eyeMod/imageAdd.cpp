@@ -20,9 +20,6 @@
 #include "findEyeCorner.h"
 
 
-//#include <cv.h>
-//#include <highgui.h>
-
 int drawing = 0;
 int last_x = 0;
 int last_y = 0;
