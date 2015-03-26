@@ -8,13 +8,13 @@ MMU Dissertation 2014 - 15
 
 ###OSX or Linux with Make
 
-Navigate to the eyeMod Directory:
+In Terminal navigate to the eyeMod directory and exectute the follow commands in order
 
 mkdir build
 
 cd build
 
-cmake ../
+cmake ..
 
 make
 
