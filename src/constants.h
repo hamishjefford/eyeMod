@@ -15,11 +15,7 @@ const bool kSmoothFaceImage = false;
 const float kSmoothFaceFactor = 0.005;
 
 // Algorithm Parameters
-<<<<<<< Updated upstream:eyeMod/constants.h
-const int kFastEyeWidth = 35;  //50 Default  (lower = faster, less accurate.)
-=======
 const int kFastEyeWidth = 65;  //50 Default  (lower = faster, less accurate.)
->>>>>>> Stashed changes:eyeMod/constants.h
 const int kWeightBlurSize = 5;
 const bool kEnableWeight = true;
 const float kWeightDivisor = 1;
