@@ -6,7 +6,7 @@ MMU Dissertation 2014 - 15
 
 (CMake is required to build eyeMod.)
 
-#OSX or Linux with Make
+###OSX or Linux with Make
 
 Navigate to the eyeMod Directory:
 
