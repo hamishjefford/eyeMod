@@ -18,6 +18,6 @@ cmake ../
 
 make
 
-./bin/eyeMod # the executable file
+./bin/eyeMod (Runs the the executable file)
 
 ```
