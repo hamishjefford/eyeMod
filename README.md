@@ -9,8 +9,11 @@
 
 ###Recommended Specifications:
 CPU: Dual Core, 2.3Ghz – 2.7Ghz
+
 Memory: 4GB
+
 Video Card: Intel HD Graphics 4000
+
 Display: 1280 x 800
 
 
